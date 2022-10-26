@@ -1,0 +1,7 @@
+{{ define "content" }}
+{{- partial "docs/nav" . -}}
+<div class="{{ if default true .Params.sidebar }}col-lg-7{{ else }}col-lg-10{{ end }} ms-auto">
+  {{ partial "docs/list" . }}
+</div>
+{{- partial "docs/sidebar" . -}}
+{{ end }}
